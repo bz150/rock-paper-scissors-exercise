@@ -1,19 +1,21 @@
 # game.py
+# Rock paper scissors
 
 import random
 
 print("Rock, Paper, Scissors, Shoot!")
-
 print("-------------------")
 print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
-#ask for user input
-user_choice = input("Please choose either 'rock' 'paper' or 'scissors': ")
 
+#ask for user input
+user_choice = input("Please choose either 'rock' 'paper' or 'scissors': ") #input() makes it string
 print("You chose:", user_choice) #printing multiple things separated by comma
 #print("You chose: " + user_chocie) #concatenation
 #print(f"You chose: {user_choice}") #string interpolation
+user_choice = user_choice.lower()
+
 
 #simulating computer input
 print("-------------------")
@@ -21,20 +23,14 @@ options = ['rock', 'paper', 'scissors']
 computer_choice = random.choice(options)
 print("The computer chose:", computer_choice)
 
+
 #verify valid selection from user
 #stop the program and don't determine winner if user choice is invalid
-user_choice.lower()
+if user_choice not in options:
+    print("Please choose a valid option and try again")
+    exit()
+    
 
-print(user_choice)
-quit()
-
-#if user_choice in options:
-#    #pass through
-#else:
-#    print("Please choose a valid option and try again")
-#    exit()
-
-quit()
 #determining who won
 print("-------------------")
 
