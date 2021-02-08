@@ -22,4 +22,10 @@ The `random.choice()` function is used to simulate a computer choice.
 A series of `if` statements are then used to determine who the winner is, or if it's a tie.
 
 # Customizing Player Name
-By default, the player's name is "Player One" - this can be changed using the .env file.
+By default, the player's name is "Player One" - this can be changed using the .env file. Please see the requirements.txt file for requirements.
+
+To customize the player name using the .env file, first install package dependencies inside the virtual environment using `pip install -r requirements.txt`
+
+Next, create a .env file and set USER_NAME equal to your desired name, e.g. `USER_NAME = "Bryan Zhou"`
+
+Then, upon runing the app, you should see "Welcome 'Bryan Zhou' ..." instead of 'Player One'
