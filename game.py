@@ -8,9 +8,10 @@ load_dotenv()
 
 USER_NAME = os.getenv("USER_NAME", default = "Player One")
 
+
 print("Rock, Paper, Scissors, Shoot!")
 print("-------------------")
-print("Welcome {USER_NAME} to my Rock-Paper-Scissors game...")
+print(f"Welcome '{USER_NAME}' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 while True: #starts the loop that allows user to play again at the end

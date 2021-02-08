@@ -1,9 +1,9 @@
 # rock-paper-scissors-exercise
-Rock paper scissors project
+Rock paper scissors project for OPIM 243
 
-# Setup instructions
+# First-Time Setup instructions
 
-After cloning the repo into Github desktop, use `cd ~/Desktop/rock-paper-scissors-exercise` in the command line to navigate into the folder
+After cloning the repo into Github desktop, use `cd ~/Desktop/rock-paper-scissors-exercise` (or wherever it's located on your local drive) in the command line to navigate into the folder
 
 Create a file using VS Code titled game.py and type in `print("Rock, Paper, Scissors, Shoot!")`
 
